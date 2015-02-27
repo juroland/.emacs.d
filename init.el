@@ -8,4 +8,5 @@
 (require 'init-programming)
 (require 'init-c)
 (require 'init-python)
+(require 'init-shell)
 
