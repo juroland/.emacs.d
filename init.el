@@ -14,6 +14,7 @@
 (require 'init-python)
 (require 'init-shell)
 (require 'init-orgmode)
+(require 'init-editing)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
