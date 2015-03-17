@@ -4,6 +4,13 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+(defun init-pkg ()
+  (interactive)
+  (progn
+    (package-install 'ace-jump-mode)
+    (package-install 'color-theme-sanityinc-solarized))
+  )
+
 (require 'init-packages)
 (require 'init-editor)
 (require 'init-window)
