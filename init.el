@@ -12,6 +12,8 @@
   )
 
 (require 'init-packages)
+(if (eq system-type 'windows-nt)
+    (require 'init-nt))
 (require 'init-editor)
 (require 'init-window)
 (require 'init-company)
@@ -22,6 +24,8 @@
 (require 'init-shell)
 (require 'init-orgmode)
 (require 'init-editing)
+(require 'init-text)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

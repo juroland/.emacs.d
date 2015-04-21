@@ -4,6 +4,8 @@
   (menu-bar-mode -1)
   (scroll-bar-mode -1))
 
+(setq inhibit-startup-message t)
+
 ;; Undo (redo) window configuration with C-c <left> (C-c <right>)
 (winner-mode 1)
 
