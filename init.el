@@ -15,6 +15,7 @@
 (require 'init-shell)
 (require 'init-orgmode)
 (require 'init-editing)
+(require 'init-project)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
