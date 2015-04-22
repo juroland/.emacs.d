@@ -4,7 +4,16 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+(defun init-pkg ()
+  (interactive)
+  (progn
+    (package-install 'ace-jump-mode)
+    (package-install 'color-theme-sanityinc-solarized))
+  )
+
 (require 'init-packages)
+(if (eq system-type 'windows-nt)
+    (require 'init-nt))
 (require 'init-editor)
 (require 'init-window)
 (require 'init-company)
@@ -16,6 +25,7 @@
 (require 'init-orgmode)
 (require 'init-editing)
 (require 'init-project)
+(require 'init-text)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
